@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your App Name</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- UI Code goes here -->
+
+  <script src="script.js"></script>
+</body>
+
+<header>
+<h1>SNAP GRID </h1>
+<p class="tagline">a computer-aided design (CAD) and graphics tool feature that aligns drawn objects to an invisible or visible grid of intersections</p>
+</header>
+
+<main>
+    <!-- Search Control Form -->
+    <form id="search-form">
+      <label for="search-input" class="sr-only">Search images</label>
+      <input 
+        id="search-input" 
+        type="search" 
+        placeholder="Type a keyword (e.g., architecture, ocean)..." 
+        required 
+      />
+      <button id="search-button" type="submit">Search</button>
+      <button id="clear-button" type="reset">Clear</button>
+    </form>
+   <!-- Original Feature 1: Category / Quick-Pick Suggestions -->
+    <div id="category-suggestions">
+      <span>Popular:</span>
+      <button type="button" class="chip">Nature</button>
+      <button type="button" class="chip">Architecture</button>
+      <button type="button" class="chip">Minimalism</button>
+      <button type="button" class="chip">Space</button>
+    </div>
+
+    <!-- Status Line Placeholder -->
+    <p id="status-message"></p>
+
+    <!-- Original Feature 2: Empty-State Message -->
+    <div id="empty-state">
+      <p>Type a word above or click a category chip to start exploring visual media.</p>
+    </div>
+
+    <!-- Empty Results Container (Styled via CSS Grid in styles.css) -->
+    <section id="results" aria-live="polite"></section>
+  </main>
+
+  <script src="script.js"></script>
+
+</body> 
+
+
+
+
+
+
+</html>
